@@ -5,6 +5,12 @@
 
 @charset "UTF-8";
 
+/*
+#990000 - Base colors
+#CC3300 - Highlight/focus colors 
+#993300 - Active/pressed colors
+*/
+
 .input,
 input,
 .textarea,
