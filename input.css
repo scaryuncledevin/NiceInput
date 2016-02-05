@@ -1,0 +1,321 @@
+/*!
+ *  NiceInput 1.0.0 by @scaryuncledevin - https://github.com/scaryuncledevin/NiceInput
+ *  Licensed under GPL-3.0 (https://github.com/scaryuncledevin/NiceInput/blob/master/LICENSE(
+ */
+
+@charset "UTF-8";
+
+.input,
+input,
+.textarea,
+textarea,
+.select,
+select,
+.button,
+button {
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	outline:none;
+}
+
+.input,
+.textarea,
+.select,
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=number],
+input[type=tel],
+textarea,
+select {
+	border:1px solid #CCCCCC;
+	border-top-color:#BBBBBB;
+	border-bottom-color:#DDDDDD;
+	background-color:#FFFFFF;
+	width:250px;
+	line-height:20px;
+	padding:5px;
+	cursor:text;
+	box-sizing:border-box;
+	display:inline-block;
+	margin:10px 0;
+}
+
+select {
+	cursor:default;
+}
+
+.input:hover,
+.textarea:hover,
+.select:hover,
+input:hover, input:focus,
+textarea:hover, textarea:focus,
+select:hover, select:focus {
+	border-color:#990000; /* General input color on hover or focus */
+}
+
+.input[disabled],
+.textarea[disabled],
+.select[disabled],
+input[type=text]:disabled,
+input[type=password]:disabled,
+input[type=number]:disabled,
+input[type=tel]:disabled,
+textarea:disabled,
+select:disabled {
+	background-color:#EEE;
+	border-color:#CCC;
+	cursor:not-allowed;
+}
+
+.input.super_short,
+.textarea.super_short,
+.select.super_short,
+input[type=text].super_short,
+input[type=password].super_short,
+input[type=number].super_short,
+input[type=tel].super_short,
+textarea.super_short,
+select.super_short {
+	width:50px
+}
+
+.input.short,
+.textarea.short,
+.select.short,
+input[type=text].short,
+input[type=password].short,
+input[type=number].short,
+input[type=tel].short,
+textarea.short,
+select.short {
+	width:100px
+}
+
+.input.shorter,
+.textarea.shorter,
+.select.shorter,
+input[type=text].shorter,
+input[type=password].shorter,
+input[type=number].shorter,
+input[type=tel].shorter,
+textarea.shorter,
+select.shorter {
+	width:150px
+}
+
+.input.medium,
+.textarea.medium,
+.select.medium,
+input[type=text].medium,
+input[type=password].medium,
+input[type=number].medium,
+input[type=tel].medium,
+textarea.medium,
+select.medium {
+	width:300px
+}
+
+.input.longish,
+.textarea.longish,
+.select.longish,
+input[type=text].longish,
+input[type=password].longish,
+input[type=number].longish,
+input[type=tel].longish,
+textarea.longish,
+select.longish {
+	width:400px;
+}
+
+.input.long,
+.textarea.long,
+.select.long,
+input[type=text].long,
+input[type=password].long,
+input[type=number].long,
+input[type=tel].long,
+textarea.long,
+select.long {
+	width:500px
+}
+
+.textarea,
+textarea {
+	height:100px;
+	resize:none;
+}
+
+.button,
+button,
+input[type=submit],
+input[type=button] {
+	display:inline-block;
+	border:1px solid #990000; /* Color while unfocused */
+	background-color:#990000; /* Color while unfocused */
+	padding:5px 10px;
+	color:#FFFFFF;
+	min-width:80px;
+	text-align:center;
+	cursor:pointer;
+	line-height:20px;
+	margin:10px 0;
+	text-decoration:none;
+	box-sizing:border-box;
+}
+
+.button:hover,
+button:hover,
+input[type=submit]:hover,
+input[type=button]:hover,
+.button:focus,
+button:focus,
+input[type=submit]:focus,
+input[type=button]:focus {
+	background-color:#CC3300; /* General button color while focused or hovering */
+}
+
+.button:active,
+button:active,
+input[type=submit]:active,
+input[type=button]:active {
+	background-color:#660000; /* Button color while being clicked */
+}
+
+.button.white:hover,
+button.white:hover,
+input[type=submit].white:hover,
+input[type=button].white:hover,
+.button.white:focus,
+button.white:focus,
+input[type=submit].white:focus,
+input[type=button].white:focus {
+	border-color:#CC3300; /* White button color while focused or hovering */
+}
+
+.button.white:active,
+button.white:active,
+input[type=submit].white:active,
+input[type=button].white:active {
+	background-color:#EEEEEE;
+	border-color:#660000; /* Border color while being clicked */
+}
+
+.button.white,
+button.white,
+input[type=submit].white,
+input[type=button].white {
+	background-color:#FFFFFF;
+	color:#990000; /* White button text color */
+}
+
+.button:disabled,
+button:disabled,
+input[type=submit]:disabled,
+input[type=button]:disabled {
+	background-color:#EEE;
+	color:#CCC;
+	cursor:not-allowed;
+}
+
+label .button,
+.label_group .button,
+label button,
+.label_group button,
+label input[type=submit],
+.label_group input[type=submit],
+label input[type=button],
+.label_group input[type=button] {
+	margin:0 10px;
+}
+
+.radio_indent {
+	margin-left:30px;
+}
+
+.radio,
+.checkbox,
+input[type=radio],
+input[type=checkbox] {
+	width:14px;
+	height:14px;
+	line-height:14px;
+}
+
+.radio:after,
+.checkbox:after,
+input[type=radio]:after,
+input[type=checkbox]:after {
+	content:'';
+	display:inline-block;
+
+	border:1px solid #CCCCCC;
+	border-top-color:#BBBBBB;
+	border-bottom-color:#DDDDDD;
+	background-color:#FFFFFF;
+
+	width:14px;
+	height:14px;
+	line-height:14px;
+	text-align:center;
+	font-weight:bold;
+	font-size:18px;
+	cursor:pointer;
+}
+
+.radio:after,
+input[type=radio]:after {
+	border-radius:50%;
+	font-size:20px;
+}
+
+.radio:hover:after,
+.checkbox:hover:after,
+input[type=radio]:hover:after,
+input[type=checkbox]:hover:after,
+.radio:focus:after,
+.checkbox:focus:after,
+input[type=radio]:focus:after,
+input[type=checkbox]:focus:after {
+	border-color:#990000; /* Checkbox border color */
+}
+
+.radio[disabled],
+.checkbox[disabled],
+input[type=radio][disabled],
+input[type=checkbox][disabled] {
+	cursor:not-allowed;
+}
+.radio[disabled]:after,
+.checkbox[disabled]:after,
+input[type=radio][disabled]:after,
+input[type=checkbox][disabled]:after {
+	background-color:#EEEEEE;
+	border-color:#CCCCCC;
+}
+
+.radio.checked:after,
+input[type=radio]:checked:after {
+	content:'\2022';
+}
+
+.checkbox.checked:after,
+input[type=checkbox]:checked:after {
+	content:'\00D7';
+}
+
+.label > span,
+label > span {
+	font-weight:bold;
+}
+
+.label.inline,
+label.inline,
+.label.inline > span,
+label.inline > span {
+	margin-left:5px;
+}
+
+.cursor {
+	cursor:pointer;
+}
